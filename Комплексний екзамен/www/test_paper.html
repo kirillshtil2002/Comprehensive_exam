@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <title>Untitled</title>
+    <link rel="stylesheet"  type="text/css" href="css/test_paper.css" />
+</head>
+
+<body>
+    <object data="head2.html" width="100%" height="70"></object>
+    <div class="container">
+        <div class="background-animation"></div>
+        <form id="survey-form">
+            <div class="form-group inline-fields">
+                <div>
+                    <label id="name-label" for="name">І'мя</label>
+                    <input type="text" name="name" id="name" class="form-ident" placeholder="Вкажіть ім'я" required />
+                </div>
+                <div>
+                    <label id="surname-label" for="surname">Прізвище</label>
+                    <input type="text" name="surname" id="surname" class="form-ident" placeholder="Вкажіть прізвище" required />
+                </div>
+                <div>
+                    <label id="group-label" for="group">Група</label>
+                    <input type="text" name="group" id="group" class="form-ident" placeholder="Вкажіть групу" />
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <p>Найпоширеніший ізотоп Гідрогену:</p>
+                <label>
+                    <input name="first" value="1" type="radio" class="input-radio"  />Протій</label>
+                <label>
+                    <input name="first" value="2" type="radio" class="input-radio" />Дейтерій</label>
+
+                <label><input name="first" value="3" type="radio" class="input-radio" />Тритій</label>
+                <label><input name="first" value="4" type="radio" class="input-radio" />Немає правильної відповіді</label>
+            </div>
+            <div class="form-group">
+                <p>Гідроген – це:</p>
+                <label>
+                    <input name="sek" value="1" type="radio" class="input-radio"  />s - елемент;</label>
+                <label>
+                    <input name="sek" value="2" type="radio" class="input-radio" />р - елемент;</label>
+
+                <label><input name="sek" value="3" type="radio" class="input-radio" />d - елемент;</label>
+                <label><input name="sek" value="4" type="radio" class="input-radio" />Немає правильної відповіді</label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    З переліку фізичних властивостей виберіть ті, що характерні для водню:
+                </p>
+
+                <label><input name="tr" value="1" type="checkbox" class="input-checkbox" />Hайлегший серед газів.</label>
+                <label><input name="tr" value="2" type="checkbox" class="input-checkbox" />Mає різкий задушливий запах.</label>
+                <label><input name="tr" value="3" type="checkbox" class="input-checkbox" />Легко зріджується.</label>
+                <label><input name="tr" value="4" type="checkbox" class="input-checkbox" />Погано розчиняється у воді.</label>
+
+            </div>
+            <div class="form-group">
+                <p>
+                    Водень можна добути:
+                </p>
+
+                <label><input name="fo" value="1" type="checkbox" class="input-checkbox" />Розкладом води.</label>
+                <label><input name="fo" value="2" type="checkbox" class="input-checkbox" />Розкладом вуглекислого газу.</label>
+                <label><input name="fo" value="3" type="checkbox" class="input-checkbox" />Взаємодією кислот з металами.</label>
+                <label><input name="fo" value="4" type="checkbox" class="input-checkbox" />Відновленням еталів з оксидів.</label>
+
+            </div>
+            <div class="form-group">
+                <p>Водень можна зібрати:</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Обреіть правильну відповідь</option>
+                    <option value="1">Витісненням повітря, оскільки він важчий за повітря;</option>
+                    <option value="2">Витісненням повітря, оскільки він легший за повітря;</option>
+                    <option value="3">Витісненням води, оскільки він добре розчинний у воді;</option>
+                    <option value="4">Витісненням води, оскільки він мало розчинний у воді;</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Відносна густина газу (X) за вуглекислим газом становить 1,047.<br>
+                Обчисліть   відносну густину газу (X) за   воднем.</p>
+                <textarea id="ans_five" class="input-textarea" name="five" placeholder="Впишіть відповідь..."></textarea>
+            </div>
+            <div class="form-group">
+                <p>У молекулі аміну маса Карбону вчетверо більша за масу Гідрогену.<br>
+                Молекулярна формула аміну C<sub>n</sub>H<sub>2n+1</sub>NH<sub>2</sub>.<br>
+                Визначте й укажіть відносну молекулярну масу аміну.</p>
+                <textarea id="ans_six" class="input-textarea" name="six" placeholder="Впишіть відповідь..."></textarea>
+            </div>
+            <div class="form-group">
+                <p>Який об’єм водню витратиться на реакцію із 40 л кисню?</p>
+                <textarea id="ans_seven" class="input-textarea" name="seven" placeholder="Впишіть відповідь..."></textarea>
+            </div>
+            <div class="button-group">
+                <button type="submit" id="submit" class="button submit-button">
+                    Відправити
+                </button>
+                <button type="reset" id="reset" class="button reset-button">
+                   Скасувати
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

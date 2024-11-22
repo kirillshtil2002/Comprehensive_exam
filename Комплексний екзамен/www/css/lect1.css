@@ -1,0 +1,173 @@
+
+ @keyframes bg {
+     0%, 100% {
+         background-color: #1e90ff;
+    }
+     25% {
+         background-color: #39d24a;
+    }
+     50% {
+         background-color: #ffe244;
+    }
+     75% {
+         background-color: #ff36a3;
+    }
+}
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Щоб фон був позаду контенту */
+    background: radial-gradient(circle at bottom, #fff, transparent 80%),
+                linear-gradient(to top, dodgerblue 0%, transparent 70%),
+                linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4) 70%), #1e90ff;
+    animation: bg 30s infinite;
+}
+
+/*body{
+    background-image: url(../images/fon.jpg);
+     background-size: cover;
+
+   } */
+.bod{
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+
+    flex-direction: column;
+    width: 62%;
+    background-color: white;
+    border-style:solid;
+    border-color: lightgrey;
+    border-width: 0px;
+    border-radius: 10px;
+    box-shadow:  0 3px 4px 3px #808080;
+    padding:0 8px;
+}
+.menu{
+
+    width: 100%;
+}
+h2{
+    margin:2px;
+    text-indent:50px;
+}
+h3{
+    text-indent:20px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-style:italic;
+}
+p{
+    margin:8px;
+    font-size:17px;
+    font-family: "Times New Roman", Times, serif;
+    line-height:30px;
+    text-indent:50px;
+}
+.cust{
+    display: flex;
+    justify-content: center;
+    color:#798681;
+    margin:8px;
+}
+.image-container {
+    display: flex; /* Активуємо flex-контейнер */
+    justify-content: center; /* Центруємо по горизонталі */
+     /* Центруємо по вертикалі */
+     /* Висота контейнера — повний екран */
+    background-color: transparent; /* Щоб фон залишався прозорим */
+}
+
+.center_img {
+    max-width: 100%; /* Забезпечує адаптивність */
+    height: auto;
+}
+
+table, td, th{
+    margin: 0 auto; /* Центрування таблиці */
+    text-align: center;
+    padding:5px;
+    border-color: black; /* Вирівнювання тексту в таблиці */
+    border-width: 2px;
+    border-style: solid;
+    border-collapse: collapse; /* Для покращення вигляду меж таблиці */
+}
+.htable{
+
+}
+.htable thead{
+    color:green;
+    justify-content: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size:12pt;
+    font-weight:bolt;
+    background-color: lightgreen;
+}
+.htable tbody {
+    color:#bf6300;
+    font-family:Arial;
+    font-size:12pt;
+    font-style:italic;
+    background-color: #ffd07d;
+}
+a:link{
+color:#4171C4;
+text-decoration: none;
+}
+
+a:visited{
+color:#8F71DA;
+}
+
+a:hover{
+color:#f10000;
+text-decoration-line: underline;
+}
+
+a:active{
+color:#C49316;
+
+}
+.sketchfab-embed-wrapper{
+   justify-content: center;
+}
+.but-navig{
+    font-size:16px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: white;
+    background-color:#4CB2FA;
+    cursor:pointer;
+    border: 0px;
+    border-radius: 5px;
+}
+.but-navig:hover{
+
+    color:white ;
+    cursor:pointer;
+    background-color:#3765B3;
+    border-radius: 5px;
+}
+ ::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background: #4CB2FA;
+    border-radius:3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #3765B3;
+    border-radius:3px;
+}
