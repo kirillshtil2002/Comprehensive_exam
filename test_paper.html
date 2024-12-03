@@ -1,110 +1,85 @@
-<html>
+ <html>
+    <head>
+      <link rel="stylesheet"  type="text/css" href="css/kontrol.css" />
+    </head>
+    <body>
+         <object data="head2.html" width="100%" height="70"></object>
+         <div class="bod">
+           <div class="content">
+            <form action="#" method="post" target="_blank">
 
-<head>
-    <title>Untitled</title>
-    <link rel="stylesheet"  type="text/css" href="css/test_paper.css" />
-</head>
+                <div class="f1">
+                <h1>РљРѕРЅС‚СЂРѕР»СЊРЅР° СЂРѕР±РѕС‚Р°</h1><br>
+                <fieldset>
+                <legend>Р’РёРєРѕРЅР°РІРµС†СЊ</legend>
+                <label>Р†'РјСЏ <input name="name"  maxlength="15" ></label>
+                <label>РџСЂС–Р·РІРёС‰Рµ <input name="last_name" maxlength="15"></label>
+                <label>Р“СЂСѓРїР° <input name="last_name" maxlength="15"></label>
+                </fieldset>
+                </div><br>
 
-<body>
-    <object data="head2.html" width="100%" height="70"></object>
-    <div class="container">
-        <div class="background-animation"></div>
-        <form id="survey-form">
-            <div class="form-group inline-fields">
-                <div>
-                    <label id="name-label" for="name">І'мя</label>
-                    <input type="text" name="name" id="name" class="form-ident" placeholder="Вкажіть ім'я" required />
+                <div class="f">
+                <p>РќР°Р№РїРѕС€РёСЂРµРЅС–С€РёР№ С–Р·РѕС‚РѕРї Р“С–РґСЂРѕРіРµРЅСѓ:</p>
+                <label><input name="first" type="radio" value="1"> РџСЂРѕС‚С–Р№</label><br>
+                <label><input name="first" type="radio" value="2"> Р”РµР№С‚РµСЂС–Р№</label><br>
+                <label><input name="first" type="radio" value="3"> РўСЂРёС‚С–Р№</label><br>
+                <label><input name="first" type="radio" value="4"> РќРµРјР°С” РїСЂР°РІРёР»СЊРЅРѕС— РІС–РґРїРѕРІС–РґС–</label><br><br>
+                </div><br>
+
+                <div class="f">
+                <p>Р“С–РґСЂРѕРіРµРЅ вЂ“ С†Рµ:</p>
+                <label><input name="sek" type="radio" value="1"> s - РµР»РµРјРµРЅС‚;</label><br>
+                <label><input name="sek" type="radio" value="2"> СЂ - РµР»РµРјРµРЅС‚;</label><br>
+                <label><input name="sek" type="radio" value="3"> d - РµР»РµРјРµРЅС‚;</label><br>
+                <label><input name="sek" type="radio" value="4"> РќРµРјР°С” РїСЂР°РІРёР»СЊРЅРѕС— РІС–РґРїРѕРІС–РґС–</label><br><br>
+                 </div><br>
+
+                <div class="f">
+                <p>Р— РїРµСЂРµР»С–РєСѓ С„С–Р·РёС‡РЅРёС… РІР»Р°СЃС‚РёРІРѕСЃС‚РµР№ РІРёР±РµСЂС–С‚СЊ С‚С–, С‰Рѕ С…Р°СЂР°РєС‚РµСЂРЅС– РґР»СЏ РІРѕРґРЅСЋ:</p>
+                <label><input name="tr" type="checkbox"> HР°Р№Р»РµРіС€РёР№ СЃРµСЂРµРґ РіР°Р·С–РІ;</label><br>
+                <label><input name="tr" type="checkbox"> MР°С” СЂС–Р·РєРёР№ Р·Р°РґСѓС€Р»РёРІРёР№ Р·Р°РїР°С…;</label><br>
+                <label><input name="tr" type="checkbox"> Р›РµРіРєРѕ Р·СЂС–РґР¶СѓС”С‚СЊСЃСЏ;</label><br>
+                <label><input name="tr" type="checkbox"> РџРѕРіР°РЅРѕ СЂРѕР·С‡РёРЅСЏС”С‚СЊСЃСЏ Сѓ РІРѕРґС–.</label><br><br>
+                 </div> <br>
+                <div class="f">
+                <p>Р’РѕРґРµРЅСЊ РјРѕР¶РЅР° РґРѕР±СѓС‚Рё:</p>
+                <label><input name="fo" type="checkbox"> Р РѕР·РєР»Р°РґРѕРј РІРѕРґРё;</label><br>
+                <label><input name="fo" type="checkbox"> Р РѕР·РєР»Р°РґРѕРј РІСѓРіР»РµРєРёСЃР»РѕРіРѕ РіР°Р·Сѓ;</label><br>
+                <label><input name="fo" type="checkbox"> Р’Р·Р°С”РјРѕРґС–С”СЋ РєРёСЃР»РѕС‚ Р· РјРµС‚Р°Р»Р°РјРё;</label><br>
+                <label><input name="fo" type="checkbox"> Р’С–РґРЅРѕРІР»РµРЅРЅСЏРј РµС‚Р°Р»С–РІ Р· РѕРєСЃРёРґС–РІ.</label><br><br>
+                 </div> <br>
+
+                <div class="f">
+                <p>Р’РѕРґРµРЅСЊ РјРѕР¶РЅР° Р·С–Р±СЂР°С‚Рё:</p>
+                <select id="mySelect" size="4" multiple="multiple">
+                <option value="1">Р’РёС‚С–СЃРЅРµРЅРЅСЏРј РїРѕРІС–С‚СЂСЏ, РѕСЃРєС–Р»СЊРєРё РІС–РЅ РІР°Р¶С‡РёР№ Р·Р° РїРѕРІС–С‚СЂСЏ; </option>
+                <option value="2">Р’РёС‚С–СЃРЅРµРЅРЅСЏРј РїРѕРІС–С‚СЂСЏ, РѕСЃРєС–Р»СЊРєРё РІС–РЅ Р»РµРіС€РёР№ Р·Р° РїРѕРІС–С‚СЂСЏ; </option>
+                <option value="3">Р’РёС‚С–СЃРЅРµРЅРЅСЏРј РІРѕРґРё, РѕСЃРєС–Р»СЊРєРё РІС–РЅ РґРѕР±СЂРµ СЂРѕР·С‡РёРЅРЅРёР№ Сѓ РІРѕРґС–; </option>
+                <option value="4">Р’РёС‚С–СЃРЅРµРЅРЅСЏРј РІРѕРґРё, РѕСЃРєС–Р»СЊРєРё РІС–РЅ РјР°Р»Рѕ СЂРѕР·С‡РёРЅРЅРёР№ Сѓ РІРѕРґС–; </option>
+                </select><br><br>
+                  </div><br>
+
+                <div class="f">
+                <p>Р’С–РґРЅРѕСЃРЅР° РіСѓСЃС‚РёРЅР° РіР°Р·Сѓ (X) Р·Р° РІСѓРіР»РµРєРёСЃР»РёРј РіР°Р·РѕРј СЃС‚Р°РЅРѕРІРёС‚СЊ 1,047.<br>
+                РћР±С‡РёСЃР»С–С‚СЊ   РІС–РґРЅРѕСЃРЅСѓ РіСѓСЃС‚РёРЅСѓ РіР°Р·Сѓ (X) Р·Р°   РІРѕРґРЅРµРј.</p>
+                <textarea name="f"  placeholder = "Р’РїРёС€С–С‚СЊ РІС–РґРїРѕРІС–РґСЊ"></textarea><br><br>
+                 </div> <br>
+                <div class="f">
+                <p>РЈ РјРѕР»РµРєСѓР»С– Р°РјС–РЅСѓ РјР°СЃР° РљР°СЂР±РѕРЅСѓ РІС‡РµС‚РІРµСЂРѕ Р±С–Р»СЊС€Р° Р·Р° РјР°СЃСѓ Р“С–РґСЂРѕРіРµРЅСѓ.<br>
+                РњРѕР»РµРєСѓР»СЏСЂРЅР° С„РѕСЂРјСѓР»Р° Р°РјС–РЅСѓ C<sub>n</sub>H<sub>2n+1</sub>NH<sub>2</sub>.<br>
+                Р’РёР·РЅР°С‡С‚Рµ Р№ СѓРєР°Р¶С–С‚СЊ РІС–РґРЅРѕСЃРЅСѓ РјРѕР»РµРєСѓР»СЏСЂРЅСѓ РјР°СЃСѓ Р°РјС–РЅСѓ.</p>
+                <textarea name="s"  placeholder = "Р’РїРёС€С–С‚СЊ РІС–РґРїРѕРІС–РґСЊ"></textarea><br><br>
+                 </div><br>
+                <div class="f">
+                <p>РЇРєРёР№ РѕР±вЂ™С”Рј РІРѕРґРЅСЋ РІРёС‚СЂР°С‚РёС‚СЊСЃСЏ РЅР° СЂРµР°РєС†С–СЋ С–Р· 40 Р» РєРёСЃРЅСЋ?</p>
+                <input name="ans" type="number" placeholder="Р’РїРёС€С–С‚СЊ РІС–РґРїРѕРІС–РґСЊ"><br><br>
                 </div>
-                <div>
-                    <label id="surname-label" for="surname">Прізвище</label>
-                    <input type="text" name="surname" id="surname" class="form-ident" placeholder="Вкажіть прізвище" required />
+                 <div class="btn">
+                <input name="sub" type="submit" value="Р’С–РґРїСЂР°РІРёС‚Рё" class="sub" > <input name="res" type="reset" value="РЎРєР°СЃСѓРІР°С‚Рё" class="res">
                 </div>
-                <div>
-                    <label id="group-label" for="group">Група</label>
-                    <input type="text" name="group" id="group" class="form-ident" placeholder="Вкажіть групу" />
-                </div>
-            </div>
-
-
-            <div class="form-group">
-                <p>Найпоширеніший ізотоп Гідрогену:</p>
-                <label>
-                    <input name="first" value="1" type="radio" class="input-radio"  />Протій</label>
-                <label>
-                    <input name="first" value="2" type="radio" class="input-radio" />Дейтерій</label>
-
-                <label><input name="first" value="3" type="radio" class="input-radio" />Тритій</label>
-                <label><input name="first" value="4" type="radio" class="input-radio" />Немає правильної відповіді</label>
-            </div>
-            <div class="form-group">
-                <p>Гідроген – це:</p>
-                <label>
-                    <input name="sek" value="1" type="radio" class="input-radio"  />s - елемент;</label>
-                <label>
-                    <input name="sek" value="2" type="radio" class="input-radio" />р - елемент;</label>
-
-                <label><input name="sek" value="3" type="radio" class="input-radio" />d - елемент;</label>
-                <label><input name="sek" value="4" type="radio" class="input-radio" />Немає правильної відповіді</label>
-            </div>
-
-            <div class="form-group">
-                <p>
-                    З переліку фізичних властивостей виберіть ті, що характерні для водню:
-                </p>
-
-                <label><input name="tr" value="1" type="checkbox" class="input-checkbox" />Hайлегший серед газів.</label>
-                <label><input name="tr" value="2" type="checkbox" class="input-checkbox" />Mає різкий задушливий запах.</label>
-                <label><input name="tr" value="3" type="checkbox" class="input-checkbox" />Легко зріджується.</label>
-                <label><input name="tr" value="4" type="checkbox" class="input-checkbox" />Погано розчиняється у воді.</label>
-
-            </div>
-            <div class="form-group">
-                <p>
-                    Водень можна добути:
-                </p>
-
-                <label><input name="fo" value="1" type="checkbox" class="input-checkbox" />Розкладом води.</label>
-                <label><input name="fo" value="2" type="checkbox" class="input-checkbox" />Розкладом вуглекислого газу.</label>
-                <label><input name="fo" value="3" type="checkbox" class="input-checkbox" />Взаємодією кислот з металами.</label>
-                <label><input name="fo" value="4" type="checkbox" class="input-checkbox" />Відновленням еталів з оксидів.</label>
-
-            </div>
-            <div class="form-group">
-                <p>Водень можна зібрати:</p>
-                <select id="dropdown" name="role" class="form-control" required>
-                    <option disabled selected value>Обреіть правильну відповідь</option>
-                    <option value="1">Витісненням повітря, оскільки він важчий за повітря;</option>
-                    <option value="2">Витісненням повітря, оскільки він легший за повітря;</option>
-                    <option value="3">Витісненням води, оскільки він добре розчинний у воді;</option>
-                    <option value="4">Витісненням води, оскільки він мало розчинний у воді;</option>
-
-                </select>
-            </div>
-            <div class="form-group">
-                <p>Відносна густина газу (X) за вуглекислим газом становить 1,047.<br>
-                Обчисліть   відносну густину газу (X) за   воднем.</p>
-                <textarea id="ans_five" class="input-textarea" name="five" placeholder="Впишіть відповідь..."></textarea>
-            </div>
-            <div class="form-group">
-                <p>У молекулі аміну маса Карбону вчетверо більша за масу Гідрогену.<br>
-                Молекулярна формула аміну C<sub>n</sub>H<sub>2n+1</sub>NH<sub>2</sub>.<br>
-                Визначте й укажіть відносну молекулярну масу аміну.</p>
-                <textarea id="ans_six" class="input-textarea" name="six" placeholder="Впишіть відповідь..."></textarea>
-            </div>
-            <div class="form-group">
-                <p>Який об’єм водню витратиться на реакцію із 40 л кисню?</p>
-                <textarea id="ans_seven" class="input-textarea" name="seven" placeholder="Впишіть відповідь..."></textarea>
-            </div>
-            <div class="button-group">
-                <button type="submit" id="submit" class="button submit-button">
-                    Відправити
-                </button>
-                <button type="reset" id="reset" class="button reset-button">
-                   Скасувати
-                </button>
-            </div>
         </form>
-    </div>
-</body>
 
+           </div>
+         </div>
+    </body>
 </html>
