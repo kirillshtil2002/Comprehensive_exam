@@ -1,0 +1,46 @@
+
+header{
+    display: flex;
+    justify-content: center;
+ }
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width:62%;
+    height: 50px;
+    border-radius: 10px;
+    padding:0 15px;
+}
+
+.text{
+    margin:0 43px;
+    font-size:18px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    padding: 10px;
+    color: #4CB2FA;
+    text-decoration:none;
+}
+.text:hover{
+    padding: 10px;
+    color: white;
+    cursor:pointer;
+    background-color:#3765B3;
+    border-radius: 5px;
+}
+
+/*a{
+    text-decoration: none;
+    padding: 10 2 10;
+    color: black;
+}
+*/
+/*a:link{
+color:#000;
+}
+a:visited{
+color:#000;
+}*/
